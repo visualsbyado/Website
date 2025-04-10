@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css"> <!-- Linking the new CSS file -->
+</head>
+<body>
+  <div class="about-page">
+    <div class="top-row">
+      <div class="logo">VisualsByAdo.</div>
+      <div class="nav-links">
+        <a href="index.html">Welcome</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Portrait Images Gallery -->
+    <div class="images-gallery">
+      <img src="Portrait.jpg" alt="Portrait 1" onclick="openModal(this)">
+      <img src="Portrait2.jpg" alt="Portrait 2" onclick="openModal(this)">
+      <img src="Portrait3.jpg" alt="Portrait 3" onclick="openModal(this)">
+      <img src="Portrait4.jpg" alt="Portrait 4" onclick="openModal(this)">
+    </div>
+  </div>
+
+  <!-- Modal for Fullscreen View -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

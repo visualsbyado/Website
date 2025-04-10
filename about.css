@@ -1,0 +1,79 @@
+/* about.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Bahnschrift';
+    background-color: white; /* White background for the whole page */
+}
+
+.about-page {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 100%;
+    color: black; /* Black text for readability */
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between; /* Space between left and right */
+    align-items: center;
+    margin-bottom: -80px;
+    padding: 120px 0;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif; /* Same font family */
+    font-size: 3.4rem; /* Font size for your name */
+    font-weight: bold;
+    text-transform: uppercase; /* Ensure the name is in uppercase */
+}
+
+.nav-links a {
+    font-family: 'Bahnschrift';
+    color: black; /* Black color for the links */
+    text-decoration: none; /* Remove underlines */
+    margin-left: 20px; /* Space between links */
+    font-size: 1.2rem; /* Font size for the links */
+}
+
+.nav-links a:hover {
+    color: #ccc; /* Change text color on hover */
+}
+
+/* Additional styles for the introduction section */
+.intro {
+    display: flex;
+    justify-content: flex-start; /* Align text and image at the start */
+    align-items: top;
+    padding-top: 20px; /* Space from the top row */
+}
+
+.ado-image {
+    width: 350px; /* Increase image size */
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+    margin-right: 25px; /* 12px space between image and text */
+}
+
+.intro-text {
+    max-width: 600px; /* Limit the width of the text */
+}
+
+.intro-text h1 {
+    font-family: 'Bahnschrift';
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-family: 'Bahnschrift';
+    font-size: 0.8rem;
+    line-height: 1.8;S
+}

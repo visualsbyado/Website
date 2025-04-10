@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Bahnschrift';
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('joji.jpg'); /* Background image */
+    background-size: cover; /* Ensure the image covers the full screen */
+    background-position: center; /* Center the background image */
+    color: white;
+    position: relative;
+}
+
+/* Apply small padding (6px) to the content */
+.top-row {
+    position: absolute;
+    top: 6px; /* 6px space from the top */
+    left: 22px; /* 15px space from the left */
+    right: 21px; /* 18px space from the right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px; /* Small padding to move the content slightly */
+}
+
+.logo {
+    font-family: 'Bahnschrift';
+    font-size: 2rem; /* Font size for your name */
+    font-weight: bold; /* Fixed font-weight issue */
+    text-transform: uppercase; /* Ensure the name is in uppercase */
+}
+
+.right-side {
+    display: flex;
+    align-items: center; /* Align logos and button in a row */
+}
+
+.mail-logo img,
+.instagram-logo img {
+    width: 20px; /* Adjust the size of the logos */
+    height: 20px;
+    margin-right: 14px; /* Space between logos */
+    margin-left: 0; /* Remove unnecessary negative margin */
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 2px 1px;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.enter-button button {
+    background-color: transparent;
+    color: white;
+    font-family: 'Bahnschrift';
+    font-size: 0.8rem; /* Adjusted for better readability */
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.enter-button button:hover {
+    color: #ccc; /* Change text color on hover */
+}
